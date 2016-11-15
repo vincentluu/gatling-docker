@@ -273,14 +273,14 @@
               "function": "mean",
               "column": "value",
               "series": "/gatling.*.[^.]+.all.percentiles99-0/",
-              "query": "select mean(value) from /gatling.*.[^.]+.all.percentiles99-0/ where $timeFilter group by time($interval) order asc"
+              "query": "select mean(value) from /gatling.*.[^.]+.all.percentiles99/ where $timeFilter group by time($interval) order asc"
             },
             {
               "target": "",
               "function": "mean",
               "column": "value",
               "series": "/gatling.*.[^.]+.all.percentiles95-0/",
-              "query": "select mean(value) from /gatling.*.[^.]+.all.percentiles95-0/ where $timeFilter group by time($interval) order asc"
+              "query": "select mean(value) from /gatling.*.[^.]+.all.percentiles95/ where $timeFilter group by time($interval) order asc"
             }
           ],
           "aliasColors": {},
